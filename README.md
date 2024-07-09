@@ -5,29 +5,31 @@
 This project aims to predict the fare of Uber rides in New York City using various machine learning algorithms. 
 The notebook explores data preprocessing, feature engineering, model training, and evaluation to build a reliable fare prediction model.
 
-## Sections
+## Findings
 
-### Introduction
-Overview of the project and its objectives.
+1. **Data Exploration:**
+   - The dataset contains information on pickup and dropoff locations, datetime, passenger count, and fare amount.
+   - There are some missing values and outliers in the data that need to be addressed during preprocessing.
 
-### Data Exploration
-Examining the dataset to understand its structure and identify any patterns or anomalies.
+2. **Data Preprocessing:**
+   - Missing values were handled by either filling them with appropriate values or dropping the rows.
+   - Outliers were identified and removed to prevent them from skewing the model results.
 
-### Data Preprocessing
-Cleaning the data and handling missing values to prepare it for modeling.
+3. **Feature Engineering:**
+   - New features such as distance between pickup and dropoff locations, hour of the day, day of the week, and month were created.
+   - These features helped in capturing the patterns in fare amount based on time and distance.
 
-### Feature Engineering
-Creating new features from the existing data to improve model performance.
+4. **Model Training:**
+   - Various models were trained including Linear Regression, Decision Trees, Random Forest, and Gradient Boosting.
+   - Hyperparameter tuning was performed to optimize the performance of the models.
 
-### Model Training
-Training various machine learning models to predict Uber fares.
+5. **Model Evaluation:**
+   - The models were evaluated using Mean Absolute Error (MAE) and Root Mean Squared Error (RMSE).
+   - Gradient Boosting performed the best with the lowest MAE and RMSE, indicating it captured the patterns in the data more effectively than other models.
 
-### Model Evaluation
-Evaluating the performance of the models using appropriate metrics.
-
-### Conclusion
-Summarizing the findings and potential improvements for the future.
-
+6. **Conclusion:**
+   - The project demonstrated the importance of data preprocessing and feature engineering in improving model performance.
+   - Gradient Boosting emerged as the most reliable model for predicting Uber fares based on the given dataset.
 
 ## Getting Started
 
